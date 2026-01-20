@@ -88,7 +88,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Formularios Pastel */
 .form {
     background-color: #fff;
     padding: 40px;
@@ -125,7 +124,6 @@ body {
     cursor: pointer;
 }
 
-/* Tablas Pastel */
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -186,12 +184,6 @@ body {
     .nav ul { flex-direction: column; gap: 10px; }
     .footer-container { flex-direction: column; gap: 30px; text-align: center; }
 }
-
-
-
-
-/* ... (Mantener Header, Footer y Form igual) ... */
-
 .table-container {
     width: 100%;
     background: #fff;
@@ -231,14 +223,13 @@ body {
     font-size: 14px;
 }
 
-/* ================= RESPONSIVE SIN SCROLL HORIZONTAL ================= */
+
 @media (max-width: 600px) {
-    /* Escondemos los encabezados de la tabla (Profesional/Horarios) */
+
     .table thead {
         display: none;
     }
 
-    /* Convertimos cada fila en un bloque vertical */
     .table tr {
         display: block;
         margin-bottom: 10px;
@@ -246,7 +237,7 @@ body {
         border-radius: 5px;
     }
 
-    /* Las celdas ocupan todo el ancho */
+
     .table td {
         display: block;
         width: 100%;
@@ -255,7 +246,7 @@ body {
         border: none;
     }
 
-    /* La celda del nombre del médico resalta un poco más */
+  
     .table td:first-child {
         font-weight: 600;
         color: #2C3E50;
