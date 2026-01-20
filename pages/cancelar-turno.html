@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelar Turno | OSPAV MAIPU</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <img src="../img/logo-obrasocial.png" alt="Logo OSPAV" style="height: 50px; width: auto;">
+        <h1 class="logo">OSPAV <span>MAIPU</span></h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="calendario.html">calendario</a></li>       
+                <li><a href="solicitar-turno.html">Solicitar Turno</a></li>
+                <li><a href="cancelar-turno.html" class="active">Cancelar Turno</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html" class="btn-login">Acceso Personal</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main" style="display: flex; justify-content: center;">
+    <form class="form">
+        <h2 style="color: #7FB3D5; margin-bottom: 20px;">Cancelar Turno</h2>
+        <p style="font-size: 14px; color: #666; margin-bottom: 20px;">Ingrese los datos del turno que desea cancelar:</p>
+        
+        <label>DNI del Paciente:</label>
+        <input type="text" placeholder="Ingrese su documento" required>
+        
+        <label>Nombre y Apellido:</label>
+        <input type="text" placeholder="Ej: Pérez, Juan" required>
+
+        <label>Fecha del Turno a cancelar:</label>
+        <input type="date" required>
+
+        <label>Motivo (Opcional):</label>
+        <textarea style="width: 100%; border: 1px solid #ddd; border-radius: 4px; padding: 10px; font-family: inherit;" rows="3"></textarea>
+
+        <button type="submit" style="background-color: #e74c3c; margin-top: 15px;">CANCELAR TURNO</button>
+        <p style="font-size: 11px; color: #999; text-align: center; margin-top: 15px;">
+            * Se enviará una notificación de cancelación a nuestro sistema.
+        </p>
+    </form>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Maipú</h3>
+            <p>Ozamis 1324 – Maipú</p>
+            <p>Mendoza – Argentina</p>
+        </div>
+        <div class="footer-column">
+            <h3>Gestión de Turnos</h3>
+            <p><a href="solicitar-turno.html" style="color: #555; text-decoration: none;">Solicitar Turno</a></p>
+            <p><a href="cancelar-turno.html" style="color: #555; text-decoration: none;">Cancelar Turno</a></p>
+        </div>
+        <div class="footer-column">
+            <div class="footer-redes">
+                <span>Redes</span>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="20"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

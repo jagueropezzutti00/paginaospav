@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Turno | OSPAV MAIPU</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <img src="../img/logo-obrasocial.png" alt="Logo OSPAV" style="height: 50px; width: auto;">
+        <h1 class="logo">OSPAV <span>MAIPU</span></h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="calendario.html">calendario</a></li>                  
+                <li><a href="solicitar-turno.html" class="active">Solicitar Turno</a></li>
+                <li><a href="cancelar-turno.html">Cancelar Turno</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="pages/login.html" class="btn-login">Acceso Personal</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main" style="display: flex; justify-content: center;">
+    <form class="form">
+        <h2 style="color: #7FB3D5; margin-bottom: 20px;">Solicitud de Turno</h2>
+        
+        <label>Apellido y Nombre:</label>
+        <input type="text" placeholder="Ej: Pérez, Juan" required>
+        
+        <label>DNI:</label>
+        <input type="text" placeholder="Ingrese su número de documento" required>
+        
+        <label>Teléfono de Contacto:</label>
+        <input type="tel" placeholder="Ej: 261XXXXXXX" required>
+
+        <label>Seleccione Médico / Especialidad:</label>
+        <select required>
+            <option value="" disabled selected>Seleccione un profesional...</option>
+            
+            <optgroup label="MÉDICOS CLÍNICOS">
+                <option>Dr. Tolin, Gustavo (Lunes 8:00)</option>
+                <option>Dr. Cuadrado, Jonathan (Mie 14:30 / Jue 16:00)</option>
+                <option>Dra. Morales, Macarena (Mie 09:30 / Vie 14:00)</option>
+            </optgroup>
+
+            <optgroup label="PEDIATRÍA">
+                <option>Dra. Romano, Cecilia (Viernes 09:30 - Cada 15 días)</option>
+                <option>Dra. Carrillo, Marcela (Miércoles 12:00)</option>
+            </optgroup>
+
+            <optgroup label="TRAUMATOLOGÍA">
+                <option>Dr. Turini, Sergio (Martes 11:30)</option>
+                <option>Dr. Saso, Alejandro (Miércoles 13:30)</option>
+            </optgroup>
+
+            <optgroup label="ODONTOLOGÍA">
+                <option>Dra. Guignet, Juliana (Mar y Jue 09:30)</option>
+                <option>Dr. Tonidandel, Luciano (Jueves 16:00)</option>
+            </optgroup>
+
+            <optgroup label="OTRAS ESPECIALIDADES">
+                <option>DIABETOLOGÍA - Dra. Barrera, Leticia (Mie 15:00)</option>
+                <option>GINECOLOGÍA - Dra. Quiroga, Carolina (Mie 09:30)</option>
+                <option>ECOGRAFÍAS - Dr. Lofavll, Hector (Lun 14:30)</option>
+                <option>PSICOLOGÍA - Lic. Vera, Nahir (Lun 09:30)</option>
+                <option>NUTRICIÓN - Lic. Rodriguez, Eleonora (Lun 10:30)</option>
+            </optgroup>
+        </select>
+
+        <label>Fecha del Turno:</label>
+        <input type="date" required>
+
+        <label>Hora preferente:</label>
+        <input type="time" required>
+
+        <button type="submit" style="margin-top: 15px;">ENVIAR SOLICITUD</button>
+        
+        <p style="font-size: 12px; color: #888; text-align: center; margin-top: 15px;">
+            * Todos los campos son obligatorios para procesar su solicitud.
+        </p>
+    </form>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Maipú</h3>
+            <p>Ozamis 1324 – Maipú</p>
+            <p>Mendoza – Argentina</p>
+        </div>
+        <div class="footer-column">
+            <h3>Horarios de atención</h3>
+            <p>Lunes a Viernes de 8:00 a 18:00 hs.</p>
+        </div>
+        <div class="footer-column">
+            <div class="footer-redes">
+                <span>Redes</span>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="20" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20" alt="Facebook"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

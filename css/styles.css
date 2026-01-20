@@ -1,0 +1,333 @@
+
+/* ================= BASES Y TIPOGRAFÍA ================= */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #fcfcfc;
+    color: #444;
+}
+
+/* ================= HEADER Y NAVEGACIÓN ================= */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { 
+    color: #7FB3D5; 
+    font-size: 22px; 
+    font-weight: 600;
+}
+
+.logo span { color: #999; font-weight: 400; }
+
+.nav ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.nav a { 
+    color: #666; 
+    text-decoration: none; 
+    font-weight: 400; 
+    font-size: 13.5px;
+    transition: color 0.3s;
+}
+
+.nav a:hover, .nav a.active { color: #7FB3D5; }
+
+/* Botón Acceso Personal */
+.btn-login {
+    border: 1.5px solid #7FB3D5;
+    padding: 6px 18px;
+    border-radius: 20px;
+    color: #7FB3D5 !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    margin-left: 10px;
+}
+
+.btn-login:hover {
+    background-color: #7FB3D5;
+    color: white !important;
+}
+
+/* ================= CONTENIDO ================= */
+.main {
+    max-width: 1140px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.main h2 { 
+    color: #2C3E50; 
+    font-weight: 400; 
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Formularios Pastel */
+.form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.form label {
+    font-weight: 600;
+    color: #2C3E50;
+    font-size: 14px;
+}
+
+.form input, .form select {
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+.form button {
+    background-color: #7FB3D5;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Tablas Pastel */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #2C3E50;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #7FB3D5;
+}
+
+.table td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #666;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #f0f0f0;
+    padding: 50px 0;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.footer-redes { display: flex; align-items: center; gap: 15px; }
+.footer-redes span { font-weight: 600; color: #2C3E50; font-size: 14px; }
+
+@media (max-width: 768px) {
+    .container { flex-direction: column; gap: 15px; }
+    .nav ul { flex-direction: column; gap: 10px; }
+    .footer-container { flex-direction: column; gap: 30px; text-align: center; }
+}
+
+
+
+
+/* ... (Mantener Header, Footer y Form igual) ... */
+
+.table-container {
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.category-row {
+    background-color: #f0f7fb !important;
+}
+
+.category-row td {
+    color: #7FB3D5;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 12px 15px;
+    border-bottom: 2px solid #7FB3D5;
+}
+
+.table th {
+    background-color: #ffffff;
+    color: #2C3E50;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f9f9f9;
+    color: #555;
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVE SIN SCROLL HORIZONTAL ================= */
+@media (max-width: 600px) {
+    /* Escondemos los encabezados de la tabla (Profesional/Horarios) */
+    .table thead {
+        display: none;
+    }
+
+    /* Convertimos cada fila en un bloque vertical */
+    .table tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+    }
+
+    /* Las celdas ocupan todo el ancho */
+    .table td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        border: none;
+    }
+
+    /* La celda del nombre del médico resalta un poco más */
+    .table td:first-child {
+        font-weight: 600;
+        color: #2C3E50;
+        background-color: #fafafa;
+    }
+
+
+    .category-row {
+        margin-top: 20px;
+        border: none !important;
+    }
+    
+    .category-row td {
+        background-color: #f0f7fb !important;
+        text-align: center;
+    }
+}
+/* Estilos Generales */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #fcfcfc; color: #444; }
+
+/* Navegación */
+.header { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; }
+.container { max-width: 1100px; margin: auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+.logo { color: #7FB3D5; font-size: 24px; }
+.logo span { color: #aaa; }
+.nav ul { list-style: none; display: flex; gap: 15px; }
+.nav a { text-decoration: none; color: #666; font-size: 14px; transition: 0.3s; }
+.nav a:hover, .nav a.active { color: #7FB3D5; font-weight: bold; }
+.btn-login { border: 1px solid #7FB3D5; padding: 5px 15px; border-radius: 20px; color: #7FB3D5 !important; }
+
+/* Main */
+.main { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+h2 { margin-bottom: 25px; color: #555; }
+
+/* Formularios */
+.form { background: #fff; padding: 30px; border-radius: 10px; border: 1px solid #eee; width: 100%; max-width: 400px; }
+.form label { display: block; margin-top: 15px; font-size: 14px; font-weight: bold; color: #666; }
+.form input, .form select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; }
+.form button { width: 100%; padding: 12px; margin-top: 20px; border: none; border-radius: 5px; background: #7FB3D5; color: #fff; font-weight: bold; cursor: pointer; }
+
+/* Tablas Responsivas Sin Scroll */
+.table-container { width: 100%; background: #fff; border-radius: 8px; overflow: hidden; border: 1px solid #eee; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+.category-row { background: #f0f7fb; color: #7FB3D5; font-weight: bold; }
+
+@media (max-width: 600px) {
+    .table thead { display: none; }
+    .table tr { display: block; border-bottom: 2px solid #eee; }
+    .table td { display: block; width: 100%; padding: 10px; }
+    .table td:first-child { font-weight: bold; background: #fafafa; }
+}
+
+/* Footer */
+.footer { background: #fff; padding: 30px 0; border-top: 1px solid #eee; margin-top: 50px; }
+.footer-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-around; }
+.footer-column h3 { font-size: 16px; color: #7FB3D5; margin-bottom: 10px; }
+.footer-column p, .footer-column a { font-size: 13px; color: #777; text-decoration: none; }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logo-container {
+        justify-content: center;
+    }
+}
