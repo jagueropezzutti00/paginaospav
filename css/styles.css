@@ -1,4 +1,3 @@
-
 /* 1. IMPORTACIÓN Y RESET */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
@@ -15,7 +14,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     background-color: #fcfcfc;
-    color: #565656; /* Contraste corregido según pedido del profesor */
+    color: #565656;
 }
 
 .text-primary-custom {
@@ -98,6 +97,22 @@ body {
     color: white;
 }
 
+/* Botón Rojo específico para Cancelar (según imagen) */
+.btn-cancelar-rojo {
+    background-color: #d9434e;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-cancelar-rojo:hover {
+    background-color: #b33640;
+}
+
 /* 5. SECCIONES Y FORMULARIOS */
 .main {
     padding: 60px 0;
@@ -121,11 +136,19 @@ body {
 .form-login {
     max-width: 400px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .form-cancelar {
-    max-width: 500px;
+    max-width: 800px; /* Aumentado para que el diseño de columnas quepa bien */
     width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilo para inputs dentro de formularios */
+.form-control {
+    border: 1px solid #ced4da;
+    padding: 10px;
 }
 
 /* 6. TABLAS Y COMPONENTES */
@@ -188,7 +211,7 @@ body {
     opacity: 1;
 }
 
-/* 8. MEDIA QUERIES (Al final del archivo) */
+/* 8. MEDIA QUERIES */
 @media (max-width: 992px) {
     .footer-container {
         justify-content: center;
