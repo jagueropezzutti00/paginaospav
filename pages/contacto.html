@@ -4,62 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | OSPAV MAIPU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <div class="logo-wrapper" style="display: flex; align-items: center; gap: 15px;">
-            <img src="../img/logo-obrasocial.png" alt="Logo OSPAV" style="height: 50px; width: auto;">
-            <h1 class="logo">OSPAV <span>MAIPU</span></h1>
-        </div>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="especialidades.html">Especialidades</a></li>
-                <li><a href="calendario.html">Calendario</a></li>                  
-                <li><a href="solicitar-turno.html">Solicitar Turno</a></li>
-                <li><a href="cancelar-turno.html">Cancelar Turno</a></li>
-                <li><a href="contacto.html" class="active">Contacto</a></li>
-                <li><a href="login.html" class="btn-login">Acceso Personal</a></li>
-            </ul>
-        </nav>
-    </div>
+<header class="header bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <div class="container-fluid">
+            <div class="logo-wrapper d-flex align-items-center">
+                <img src="../img/logo-obrasocial.png" alt="Logo OSPAV" class="logo-img me-3">
+                <h1 class="logo mb-0">OSPAV <span>MAIPU</span></h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="especialidades.html">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="solicitar-turno.html">Solicitar Turno</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cancelar-turno.html">Cancelar Turno</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link btn-login ms-lg-3" href="login.html">Acceso Personal</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 
-<main class="main">
-    <div style="margin-bottom: 40px;">
-        <h2 style="color: #7FB3D5;">Contacto</h2>
-        <p><strong>Dirección:</strong> Ozamis 1324, Maipú, Mendoza</p>
-        <p><strong>Teléfonos:</strong> 4810964 / 4972283</p>
-        <p><strong>WhatsApp:</strong> 2613051942</p>
+<main class="main container py-5">
+    <div class="row g-4">
+        <div class="col-lg-5">
+            <h2 class="text-primary-custom mb-4">Contacto</h2>
+            <div class="mb-3 p-3 bg-white rounded border">
+                <p class="mb-2"><strong>📍 Dirección:</strong> Ozamis 1324, Maipú, Mendoza</p>
+                <p class="mb-2"><strong>📞 Teléfonos:</strong> 4810964 / 4972283</p>
+                <p class="mb-0"><strong>💬 WhatsApp:</strong> 2613051942</p>
+            </div>
+        </div>
+<div class="col-lg-7">
+    <div class="map-responsive border rounded overflow-hidden shadow-sm">
+        <iframe
+            class="map-iframe"
+            src="https://www.google.com/maps?q=Ozamis+1324,+Maipú,+Mendoza,+Argentina&output=embed"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
     </div>
-    
-    <div class="mapa-container" style="border: 2px solid #7FB3D5; border-radius: 8px; overflow: hidden; line-height: 0;">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.530656093539!2d-68.78891508821946!3d-32.96918387347492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0ced34869ebe%3A0x50cf116123dac81f!2sOzamis%201324%2C%20M5515%20Maip%C3%BA%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1716300000000!5m2!1ses-419!2sar" 
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
 </div>
 </main>
-
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-column">
             <h3>Maipú</h3>
             <p>Ozamis 1324 – Maipú</p>
+            <p>Mendoza – Argentina</p>
         </div>
+
         <div class="footer-column">
-            <h3>Horarios</h3>
-            <p>Lunes a Viernes 8:00 a 18:00 hs.</p>
+            <h3>Horarios de atención</h3>
+            <p>Lunes a Viernes de 8:00 a 18:00 hs.</p>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-redes">
+                <span>Redes</span>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="20"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20"></a>
+            </div>
         </div>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
