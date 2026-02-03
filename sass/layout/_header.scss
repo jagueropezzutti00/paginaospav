@@ -1,0 +1,40 @@
+@use "../utilities/variables" as *;
+
+.header {
+    background-color: $bg-blanco;
+    border-bottom: 1px solid $color-borde;
+    padding: 10px 0;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 60px;
+    object-fit: contain;
+
+    &-login { // Genera .logo-img-login
+        height: 40px;
+    }
+}
+
+.logo {
+    color: $color-celeste;
+    font-size: 22px;
+    font-weight: 600;
+
+    span { // Genera .logo span
+        color: $color-gris-suave;
+        font-weight: 400;
+    }
+}
+
+.navbar {
+    .nav-link.active {
+        color: $color-celeste;
+        font-weight: 600;
+    }
+}
