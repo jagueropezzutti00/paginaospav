@@ -26,3 +26,8 @@
     border: 1px solid #ced4da;
     padding: 10px;
 }
+@use "../utilities/mixins" as *;
+
+.form-container {
+    @include fade-in-up(0.6s, 0.3s); // Aparece suave después del resto
+}

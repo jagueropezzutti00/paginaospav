@@ -1,22 +1,36 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .header {
     background-color: $bg-blanco;
     border-bottom: 1px solid $color-borde;
     padding: 10px 0;
+    
+    // Agregamos una transición suave por si luego querés un efecto de scroll
+    transition: all 0.3s ease;
 }
 
 .logo-wrapper {
-    display: flex;
-    align-items: center;
+    // Usamos el Mixin de Flexbox: (dirección, justify, align)
+    @include flex-center(row, flex-start, center);
     gap: 15px;
+
+    @include mobile {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }
 
 .logo-img {
     height: 60px;
     object-fit: contain;
+    transition: transform 0.3s ease;
 
-    &-login { // Genera .logo-img-login
+    &:hover {
+        transform: scale(1.05); // Animación sutil: agranda un poquito el logo
+    }
+
+    &-login {
         height: 40px;
     }
 }
@@ -25,16 +39,25 @@
     color: $color-celeste;
     font-size: 22px;
     font-weight: 600;
+    text-decoration: none; // Por si es un link
 
-    span { // Genera .logo span
+    span {
         color: $color-gris-suave;
         font-weight: 400;
     }
 }
 
 .navbar {
-    .nav-link.active {
-        color: $color-celeste;
-        font-weight: 600;
+    .nav-link {
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: $color-celeste-hover;
+        }
+
+        &.active {
+            color: $color-celeste;
+            font-weight: 600;
+        }
     }
 }

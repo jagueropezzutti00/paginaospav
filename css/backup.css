@@ -97,7 +97,7 @@ body {
     color: white;
 }
 
-/* Botón Rojo específico para Cancelar (según imagen) */
+/* Botón Rojo específico para Cancelar */
 .btn-cancelar-rojo {
     background-color: #d9434e;
     color: white;
@@ -140,7 +140,7 @@ body {
 }
 
 .form-cancelar {
-    max-width: 800px; /* Aumentado para que el diseño de columnas quepa bien */
+    max-width: 800px; 
     width: 100%;
     margin: 0 auto;
 }

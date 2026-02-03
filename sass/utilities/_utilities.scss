@@ -59,3 +59,15 @@
         }
     }
 }
+@use "mixins" as *;
+
+.main {
+    padding: 60px 0;
+    @include fade-in-up(); // Animación por defecto
+}
+
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    @include fade-in-up(1s, 0.2s); // Un poquito más lenta y con retraso
+}

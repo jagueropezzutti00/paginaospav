@@ -1,14 +1,13 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .btn-login {
-    border: 1.5px solid $color-celeste;
+    @include btn-style(transparent, $color-celeste, 1.5px solid $color-celeste);
     padding: 6px 18px;
     border-radius: 20px;
-    color: $color-celeste;
     font-weight: 600;
     font-size: 13px;
     text-decoration: none;
-    transition: all 0.3s ease;
 
     &:hover {
         background-color: $color-celeste;
@@ -17,31 +16,23 @@
 }
 
 .btn-turno {
-    background-color: $color-celeste;
-    color: $bg-blanco;
+    @include btn-style($color-celeste, $bg-blanco);
     padding: 15px 40px;
     border-radius: 5px;
     font-weight: 600;
     text-decoration: none;
-    display: inline-block;
-    border: none;
-    transition: background 0.3s ease;
 
     &:hover {
         background-color: $color-celeste-hover;
-        color: white;
     }
 }
 
 .btn-cancelar-rojo {
-    background-color: $color-rojo-cancelar;
-    color: white;
-    border: none;
+    @include btn-style($color-rojo-cancelar, white);
     padding: 15px;
     width: 100%;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s ease;
 
     &:hover {
         background-color: $color-rojo-hover;
