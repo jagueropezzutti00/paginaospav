@@ -29,5 +29,5 @@
 @use "../utilities/mixins" as *;
 
 .form-container {
-    @include fade-in-up(0.6s, 0.3s); // Aparece suave después del resto
+    @include fade-in-up(0.6s, 0.3s); 
 }

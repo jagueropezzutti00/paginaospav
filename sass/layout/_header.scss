@@ -6,12 +6,12 @@
     border-bottom: 1px solid $color-borde;
     padding: 10px 0;
     
-    // Agregamos una transición suave por si luego querés un efecto de scroll
+    
     transition: all 0.3s ease;
 }
 
 .logo-wrapper {
-    // Usamos el Mixin de Flexbox: (dirección, justify, align)
+    
     @include flex-center(row, flex-start, center);
     gap: 15px;
 
@@ -27,7 +27,7 @@
     transition: transform 0.3s ease;
 
     &:hover {
-        transform: scale(1.05); // Animación sutil: agranda un poquito el logo
+        transform: scale(1.05); 
     }
 
     &-login {
@@ -39,7 +39,7 @@
     color: $color-celeste;
     font-size: 22px;
     font-weight: 600;
-    text-decoration: none; // Por si es un link
+    text-decoration: none; 
 
     span {
         color: $color-gris-suave;

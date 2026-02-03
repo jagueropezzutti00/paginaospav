@@ -7,7 +7,7 @@
     padding: 40px 0;
 
     .footer-container {
-        // Usamos el mixin: (dirección, justify, align)
+        
         @include flex-center(row, space-between, flex-start);
         gap: 30px;
         flex-wrap: wrap;
@@ -15,7 +15,7 @@
         margin: 0 auto;
         padding: 0 20px;
 
-        // Aplicamos el mixin de responsive para tablets/móviles
+        //  mixin de responsive para tablets/móviles
         @include mobile {
             flex-direction: column;
             align-items: center;
@@ -51,11 +51,11 @@
 
         img {
             opacity: 0.75;
-            transition: transform 0.3s ease, opacity 0.3s ease; // Animación sutil preparada
+            transition: transform 0.3s ease, opacity 0.3s ease; 
 
             &:hover {
                 opacity: 1;
-                transform: translateY(-3px); // Micro-interacción: sube un poquito
+                transform: translateY(-3px); 
             }
         }
     }
