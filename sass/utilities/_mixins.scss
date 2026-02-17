@@ -1,4 +1,4 @@
-
+// Mixin para Centrar con Flex
 @mixin flex-center($direction: row, $justify: center, $align: center) {
     display: flex;
     flex-direction: $direction;
@@ -6,7 +6,7 @@
     align-items: $align;
 }
 
-
+// Mixins para Responsive
 @mixin tablet {
     @media (max-width: 992px) { @content; }
 }
@@ -14,6 +14,8 @@
 @mixin mobile {
     @media (max-width: 768px) { @content; }
 }
+
+// Mixin para Botones Profesionales
 @mixin btn-style($bg, $color, $border: none) {
     background-color: $bg;
     color: $color;
@@ -22,16 +24,16 @@
     cursor: pointer;
     display: inline-block;
     text-align: center;
+    border-radius: 5px;
 
     &:hover {
         transform: translateY(-2px); 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    }
-
-    &:active {
-        transform: translateY(0); 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        filter: brightness(1.1);
     }
 }
+
+// Mixin para Animación de Entrada
 @mixin fade-in-up($duration: 0.8s, $delay: 0s) {
     @keyframes fadeInUp {
         from {
@@ -43,6 +45,5 @@
             transform: translateY(0);
         }
     }
-
     animation: fadeInUp $duration ease-out $delay both;
 }

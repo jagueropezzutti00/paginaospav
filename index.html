@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSPAV MAIPU | Inicio</title>
+    
+    <title>OSPAV MAIPU | Gestión de Turnos Online Mendoza</title>
+    <meta name="description" content="Obra Social del Personal de la Actividad Vitivinícola en Maipú, Mendoza. Solicitá tus turnos online de forma rápida y sencilla.">
+    <meta name="keywords" content="OSPAV, Maipú, Mendoza, Obra Social, Turnos Médicos, Vitivinícola">
+    
+    <link rel="icon" type="image/png" href="img/logo-obrasocial.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"> </head>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
 <body>
 
-<header class="header bg-white">
-    <nav class="navbar navbar-expand-lg navbar-light container">
+<header class="header bg-white sticky-top shadow-sm"> <nav class="navbar navbar-expand-lg navbar-light container">
         <div class="container-fluid">
-            <div class="logo-wrapper d-flex align-items-center">
-                <img src="img/logo-obrasocial.png" alt="Logo OSPAV" class="logo-img me-3">
+            <a class="logo-wrapper d-flex align-items-center text-decoration-none" href="index.html">
+                <img src="img/logo-obrasocial.png" alt="Logotipo oficial de OSPAV Maipú" class="logo-img me-3">
                 <h1 class="logo mb-0">OSPAV <span>MAIPU</span></h1>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/especialidades.html">Especialidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/calendario.html">Calendario</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/solicitar-turno.html">Solicitar Turno</a></li>
@@ -34,11 +42,10 @@
 </header>
 
 <main class="main container py-5">
-    <section class="hero-section">
-        <h2 class="display-4 text-primary-custom fw-bold">Bienvenido a OSPAV Maipú</h2>
+    <section class="hero-section text-center"> <h2 class="display-4 text-primary-custom fw-bold">Bienvenido a OSPAV Maipú</h2>
         <p class="lead text-muted mt-3">Gestioná tus turnos de manera rápida y sencilla desde nuestra plataforma online.</p>
         <div class="mt-5">
-            <a href="pages/solicitar-turno.html" class="btn-turno">SOLICITAR MI TURNO</a>
+            <a href="pages/solicitar-turno.html" class="btn-turno text-decoration-none">SOLICITAR MI TURNO</a>
         </div>
     </section>
 </main>
@@ -46,19 +53,18 @@
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-column">
-            <h3>Maipú</h3>
-            <p>Ozamis 1324 – Maipú</p>
+            <h3>Nuestra Ubicación</h3> <p>Ozamis 1324 – Maipú</p>
             <p>Mendoza – Argentina</p>
         </div>
         <div class="footer-column">
-            <h3>Horarios de atención</h3>
+            <h3>Horarios de Atención</h3>
             <p>Lunes a Viernes de 8:00 a 18:00 hs.</p>
         </div>
         <div class="footer-column">
             <div class="footer-redes">
-                <span>Redes</span>
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="20"></a>
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20"></a>
+                <h3>Seguinos</h3>
+                <a href="https://instagram.com" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Enlace a nuestro Instagram" width="20"></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Enlace a nuestro Facebook" width="20"></a>
             </div>
         </div>
     </div>

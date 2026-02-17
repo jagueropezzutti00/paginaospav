@@ -6,3 +6,25 @@
     box-sizing: border-box;
     font-family: $font-principal; 
 }
+
+html, body {
+    height: 100%; 
+    overflow-x: hidden; 
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: $bg-global; 
+    color: $color-texto; 
+    line-height: 1.6; 
+}
+
+img {
+    max-width: 100%; 
+    display: block;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}

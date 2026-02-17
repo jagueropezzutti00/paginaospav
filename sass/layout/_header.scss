@@ -60,4 +60,10 @@
             font-weight: 600;
         }
     }
+    .btn-login {
+    @include btn-style($color-celeste, $color-blanco); 
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border-radius: 50px; 
+}
 }
