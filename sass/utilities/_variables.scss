@@ -1,19 +1,17 @@
-// Identidad (Ajustados para mejor contraste sobre blanco)
-$color-celeste: #0077b6;       // Un celeste más corporativo y visible
-$color-celeste-hover: #005f91;
-$color-rojo-cancelar: #d90429;  // Un rojo más vibrante para alertas
-$color-rojo-hover: #a0031c;
+// Identidad 
+$color-celeste: #005B8E;       
+$color-celeste-hover: #003F63;
+$color-rojo-cancelar: #B91C1C;  
+$color-rojo-hover: #7F1D1D;
 $color-blanco: #ffffff;
 
-// Colores de Fondo (Limpieza total)
-$bg-global: #ffffff;           // Fondo blanco puro (solicita el profesor)
+// Colores de Fondo y Texto 
+$bg-global: #ffffff;           
 $bg-blanco: #ffffff;
-$color-texto: #212529;         // Gris casi negro (Estándar de accesibilidad WCAG)
-$color-gris-suave: #6c757d;    // Gris intermedio para textos secundarios
-$color-borde: #dee2e6;         // Gris sutil para líneas divisorias
+$color-texto: #1A1A1A;        
+$color-gris-suave: #4A4A4A;    
+$color-borde: #D1D5DB;         
 
-// Tipografía
+// Fuentes
 $font-principal: 'Open Sans', sans-serif;
 
-// Extras (Opcional, pero recomendado para tus mixins)
-$transicion-suave: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
