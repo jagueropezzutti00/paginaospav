@@ -1,16 +1,19 @@
-// Colores OSPAV
-$color-celeste: #7FB3D5;
-$color-celeste-hover: #5fa0c9;
-$color-rojo-cancelar: #d9434e;
-$color-rojo-hover: #882830;
+// Identidad (Ajustados para mejor contraste sobre blanco)
+$color-celeste: #0077b6;       // Un celeste más corporativo y visible
+$color-celeste-hover: #005f91;
+$color-rojo-cancelar: #d90429;  // Un rojo más vibrante para alertas
+$color-rojo-hover: #a0031c;
 $color-blanco: #ffffff;
 
-// Colores de Fondo y Texto
-$bg-global: #fcfcfc;
+// Colores de Fondo (Limpieza total)
+$bg-global: #ffffff;           // Fondo blanco puro (solicita el profesor)
 $bg-blanco: #ffffff;
-$color-texto: #565656;
-$color-borde: #f0f0f0;
-$color-gris-suave: #888;
+$color-texto: #212529;         // Gris casi negro (Estándar de accesibilidad WCAG)
+$color-gris-suave: #6c757d;    // Gris intermedio para textos secundarios
+$color-borde: #dee2e6;         // Gris sutil para líneas divisorias
 
-// Fuentes
+// Tipografía
 $font-principal: 'Open Sans', sans-serif;
+
+// Extras (Opcional, pero recomendado para tus mixins)
+$transicion-suave: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
