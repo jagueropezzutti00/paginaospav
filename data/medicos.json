@@ -1,0 +1,21 @@
+[
+  { "nombre": "Dr. Tolin, Gustavo", "especialidad": "Clínica" },
+  { "nombre": "Dr. Cuadrado, Jonathan", "especialidad": "Clínica" },
+  { "nombre": "Dra. Morales, Macarena", "especialidad": "Clínica" },
+
+  { "nombre": "Dra. Romano, Cecilia", "especialidad": "Pediatría" },
+  { "nombre": "Dra. Carrillo, Marcela", "especialidad": "Pediatría" },
+
+  { "nombre": "Dr. Turini, Sergio", "especialidad": "Traumatología" },
+  { "nombre": "Dr. Saso, Alejandro", "especialidad": "Traumatología" },
+
+  { "nombre": "Dra. Guignet, Juliana", "especialidad": "Odontología" },
+  { "nombre": "Dr. Tonidandel, Luciano", "especialidad": "Odontología" },
+
+  { "nombre": "Dra. Barrera, Leticia", "especialidad": "Diabetología" },
+  { "nombre": "Dra. Quiroga, Carolina", "especialidad": "Ginecología" },
+
+  { "nombre": "Dr. Lofvall, Hector", "especialidad": "Ecografías" },
+  { "nombre": "Lic. Vera, Nahir", "especialidad": "Psicología" },
+  { "nombre": "Lic. Rodriguez, Eleonora", "especialidad": "Nutrición" }
+]

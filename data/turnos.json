@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Juan Pérez",
+    "dni": "30111222",
+    "telefono": "2611234567",
+    "especialidad": "Clínica",
+    "medico": "Dr. Tolin",
+    "fecha": "2026-05-10",
+    "hora": "09:00"
+  },
+  {
+    "nombre": "María López",
+    "dni": "28999888",
+    "telefono": "2615551234",
+    "especialidad": "Pediatría",
+    "medico": "Dra. Romano",
+    "fecha": "2026-05-12",
+    "hora": "10:30"
+  }
+]
